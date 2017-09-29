@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "751994612904",
+    "project_id": "backend-163314"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751994612904:android:4d556d6ab2760acc",
+        "android_client_info": {
+          "package_name": "com.slp.maps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751994612904-gei569bhicc7lcoja3ls9m3udgr89v77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.slp.maps",
+            "certificate_hash": "3e0124d0861c6cd819f65e47905618bfaf95f93b"
+          }
+        },
+        {
+          "client_id": "751994612904-b7denm9kutit6ferlbkchkdpe2jnus43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMxX2BvtST-skYTrn5iZQd4PwIsRs-718"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
