@@ -1,11 +1,14 @@
 package com.slp.maps;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Switch;
 
+import com.google.android.gms.ads.AdActivity;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
@@ -39,21 +42,40 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     public void setMapTypeToSatellite(View view) {
-        if(mapReady){
+        if (mapReady) {
             googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         }
     }
 
     public void setMapTypeToNormal(View view) {
-        if(mapReady){
+        if (mapReady) {
             googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         }
     }
 
     public void setMapTypeToHybrid(View view) {
-        if(mapReady){
+        if (mapReady) {
             googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.options, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.animations:
+                startActivity(new Intent(this, AnimationActivity.class));
+                break;
+            case R.id.street_view:
+                startActivity(new Intent(this, StreetViewActivity.class));
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -4,4 +4,9 @@
     <string name="normal">Normal</string>
     <string name="terrain">Terrain</string>
     <string name="hybrid">Hybrid</string>
+    <string name="animations">Animations</string>
+    <string name="seattle">Seattle</string>
+    <string name="new_york">New York</string>
+    <string name="dublin">Dublin</string>
+    <string name="street_view">Street View</string>
 </resources>
