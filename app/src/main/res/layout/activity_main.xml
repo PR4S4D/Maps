@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.slp.maps.MainActivity">
 
     <fragment
-        android:layout_width="368dp"
-        android:layout_height="495dp"
         android:id="@+id/google_map"
         android:name="com.google.android.gms.maps.MapFragment"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        map:cameraBearing="112.5"
+        map:cameraTargetLat="40.7484"
+        map:cameraTargetLng="-73.9857"
+        map:cameraTilt="65"
+        map:cameraZoom="17"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
